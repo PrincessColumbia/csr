@@ -106,7 +106,6 @@ appServiceFrequency = "";
 appNotes = "";
 
 
-/*
 // Bulk
 
 offeredBulk = "No"; //Use only "Yes" or "No" to indicate if the service is offered.
@@ -116,6 +115,8 @@ bulkServiced = "";
 bulkServiceDay = ""; // If a day isn't entered, defaults to "Verify service day using Maps" with link
 bulkServiceFrequency = "";
 bulkNotes = "";
+
+/*
 
 // Construction Debris
 
@@ -1012,6 +1013,13 @@ if (offeredApp === "No") {
 
 //====================================================================
 
+var offeredBulk;
+var bulkRate;
+var bulkLimit;
+var bulkServiced;
+var bulkServiceDay;
+var bulkServiceFrequency;
+var bulkNotes;
 
 
 
