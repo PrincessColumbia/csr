@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+tfoot {
+  color      : #FFFFFF;
+  background : rgba(118,120,122,0.5);
+}
+
+tfoot tr th[scope="row"] {
+  color       : white;
+  font-weight : bold;
+}

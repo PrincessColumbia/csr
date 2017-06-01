@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/**
+ * DO NOT remove the lines with "-webkit..." or "-moz...", doing so WILL break
+ * the page display.
+ */
+
+body {
+  color          : #000000;
+  vertical-align : text-top;
+  font-family    : Gotham,
+                   "Helvetica Neue",
+                   Helvetica,
+                   Arial,
+                   sans-serif;
+}
+
+h3 {
+  color       : #000000;
+  font-family : Gotham,
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+  font-size   : 12pt;
+  font-weight : bold;
+}
+
+main h3 {
+  display : none;
+}
+
+.service_type {
+  border-style : none;
+}
+
+footer {
+  margin-top : 100%;
+}
+
+table {
+  width         : 100%;
+  margin-top    : 10px;
+  margin-bottom : 10px;
+  border        : 1;
+  font-size     : 10pt;
+}
+
+caption {
+  margin-top         : 0px;
+  margin-bottom      : 0px;
+  padding            : 2px;
+  color              : #FFFFFF;
+  border-top-style   : double;
+  border-right-style : double;
+  border-left-style  : double;
+  background-color   : #18476a;
+  text-align         : left;
+  vertical-align     : text-top;
+  font-family        : Gotham,
+                       "Helvetica Neue",
+                       Helvetica,
+                       Arial,
+                       sans-serif;
+  font-size          : 10pt;
+  font-weight        : bold;
+}
+
+thead {
+  background-color : #f9f6ab;
+}
+
+th {
+  text-align     : left;
+  vertical-align : top;
+  font-size      : 10pt;
+}
+
+td {
+  vertical-align : top;
+}
+
+.title {
+  font-size   : 18pt;
+  font-style  : italic;
+  font-weight : bold;
+}
+
+.normalbold {
+  font-size   : 12pt;
+  font-weight : bold;
+}
+
+.normal {
+  font-size : 12pt;
+}
+
+.menu {
+  margin-bottom        : 10px;
+  font-weight          : bold;
+  list-style-position  : inside;
+  -webkit-column-count : 2;
+  column-count         : 2;
+  -moz-column-width    : 50%;
+  -webkit-column-width : 50%;
+  column-width         : 50%;
+}
+
+.menu section {}
+
+nav section {}
+
+.data_columns {
+  width : calc(80% / var(--data-number-of-columns));
+}
+
+.section_header {
+  margin-top          : 0px;
+  margin-bottom       : 0px;
+  padding             : 2px;
+  color               : #FFFFFF;
+  border-bottom-style : double;
+  background-color    : #18476A;
+  text-align          : left;
+  vertical-align      : text-top;
+  font-family         : Gotham,
+                        "Helvetica Neue",
+                        Helvetica,
+                        Arial,
+                        sans-serif;
+  font-size           : 10pt;
+  font-weight         : bold;
+}
+
+.row-header {
+  width            : 20%;
+  background-color : #b0cfeb;
+  vertical-align   : top;
+}
+
+.basic_list {
+  margin          : 0px;
+  padding         : 0px;
+  font-size       : 10pt;
+  list-style-type : none;
+}
+
+.basic_list li {
+  margin              : 0px;
+  padding             : 2px;
+  border-bottom-style : double;
+  list-style-type     : none;
+}
+
+.basic_list li:last-child {
+  margin              : 0px;
+  padding             : 2px;
+  border-bottom-style : hidden;
+  list-style-type     : none;
+}
+
+h1 {
+  color       : #000000;
+  font-family : Gotham,
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+  font-size   : 24px;
+  font-style  : italic;
+  font-weight : bold;
+}
+
+h2 {
+  color       : #000000;
+  font-family : Gotham,
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+  font-size   : 16px;
+}

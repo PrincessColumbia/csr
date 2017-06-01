@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+#Contacts #Contacts_for_Other_Disposal .column_1 {
+  width : 33%;
+}
+
+#Contacts_for_Other_Disposal colgroup .column_2 {
+  width : 33%;
+}
+
+.information {
+  margin-top    : 20px;
+  margin-right  : 20px;
+  margin-bottom : 20px;
+  margin-left   : 20px;
+  text-align    : left;
+  font-size     : large;
+  font-weight   : bold;
+}
+
+#Division_Site_Information tr td:nth-child(odd):hover {
+  background-color : white;
+}
+
+#Division_Site_Information tr th:nth-child(odd):hover {
+  background-color : white;
+}

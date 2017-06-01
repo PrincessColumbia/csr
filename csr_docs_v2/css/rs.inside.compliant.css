@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+@import "url('rs.inside.compliant.class.selectors.css')";
+@import "url('https://fonts.googleapis.com/css?family=Open+Sans')";
+
+
+* {
+  margin      : 0;
+  padding     : 0;
+  font-family : "Open Sans",
+                sans-serif;
+}
+
+/**
+ * DO NOT remove the lines with "-webkit..." or "-moz...", doing so WILL break
+ * the page display.
+ */
+
+body {
+  height      : 50px;
+  margin      : 0px;
+  font-family : open-sans;
+  font-style  : normal;
+  font-weight : 400;
+}
+
+h1 {
+  color         : #004A7C;
+  text-align    : center;
+  align-content : center;
+  font-family   : open-sans;
+  font-style    : normal;
+  font-weight   : 300;
+}
+
+h2 {
+  color       : #004A7C;
+  font-family : open-sans;
+  font-style  : normal;
+  font-weight : 300;
+}
+
+h3 {
+  color       : #004A7C;
+  font-family : open-sans;
+  font-style  : normal;
+  font-weight : 400;
+}
+
+h4 {
+  color       : #004A7C;
+  font-family : open-sans;
+  font-style  : normal;
+  font-weight : 700;
+}
+
+summary {
+  color       : #004A7C;
+  text-indent : 0%;
+  font-family : open-sans;
+  font-style  : normal;
+  font-weight : 700;
+}
+
+a.anchor {
+  display    : block;
+  visibility : hidden;
+  position   : relative;
+  top        : -100px;
+}
+
+h5 {
+  color       : #004A7C;
+  font-family : open-sans;
+  font-style  : normal;
+  font-weight : 300;
+}
+
+header {
+  position              : fixed;
+  top                   : 0;
+  width                 : 100%;
+  height                : 61px;
+  margin                : 0px auto;
+  padding-top           : 15px;
+  padding-right         : 15px;
+  padding-bottom        : 15px;
+  padding-left          : 141px;
+  color                 : white;
+  background-image      : url(../images/InsideRepubilcLogo.png);
+  background-color      : #004A7C;
+  background-repeat     : no-repeat;
+  background-attachment : fixed;
+  background-position   : 15px 15px;
+  background-size       : 110px auto;
+}
+
+nav {
+  position     : fixed;
+  width        : 15%;
+  margin-top   : 62px;
+  margin-right : 1%;
+  margin-left  : 1%;
+}
+
+table {
+  width           : 100%;
+  margin-bottom   : 20px;
+  border-style    : none;
+  border-collapse : collapse;
+}
+
+thead {}
+
+caption {
+  margin-bottom  : 20px;
+  padding-bottom : 5px;
+  color          : #004a7c;
+  border-bottom  : thin solid #c7c8ca;
+  text-align     : left;
+  font-weight    : 700;
+}
+
+th {
+  margin-bottom     : 5px;
+  padding           : 5px;
+  border-right      : thin solid #c7c8ca;
+  border-bottom     : thin solid #c7c8ca;
+  border-top-style  : none;
+  border-left-style : none;
+}
+
+th:last-child {
+  border-bottom      : thin solid #c7c8ca;
+  border-top-style   : none;
+  border-right-style : none;
+  border-left-style  : none;
+}
+
+tr {}
+
+tr:last-child {
+  border-bottom-style : none;
+}
+
+.other_tax_table {}
+
+.bulk_rates_table {}
+
+table.other_tax_table tbody tr:last-child td {
+  border-right : thin solid #c7c8ca;
+}
+
+table.bulk_rates_table tbody tr:last-child td {
+  border-right : thin solid #c7c8ca;
+}
+
+table.other_tax_table tbody tr:last-child td:last-child {
+  border-right-style : none;
+}
+
+table.bulk_rates_table tbody tr:last-child td:last-child {
+  border-right-style : none;
+}
+
+#tax_type_col {
+  width : 15%;
+}
+
+#tax_amount_col {
+  width : 15%;
+}
+
+th:last-child {}
+
+th[scope="row"] {
+  color        : #00adef;
+  border-right : thin solid #c7c8ca;
+  font-style   : italic;
+  font-weight  : 300;
+}
+
+th+th[scope="col"] {
+  color        : #f38a00;
+  border-right : thin solid #c7c8ca;
+  font-weight  : 400;
+}
+
+th[scope="col"] {
+  color         : #f38a00;
+  border-right  : thin solid #c7c8ca;
+  border-bottom : thin solid #c7c8ca;
+  font-weight   : 400;
+}
+
+td {
+  padding           : 5px;
+  border-right      : thin solid #c7c8ca;
+  border-bottom     : thin solid #c7c8ca;
+  border-top-style  : none;
+  border-left-style : none;
+}
+
+tr:last-child td {
+  border-right-style  : none;
+  border-bottom-style : none;
+}
+
+tr td:last-child {
+  border-right-style : none;
+}
+
+tr th:last-child {
+  border-right-style : none;
+}
+
+tr:last-child th[scope="row"] {
+  border-bottom-style : none;
+}
+
+.row-header {
+  width : 20%;
+}
+
+.data_columns {
+  width : calc(80% / var(--data-number-of-columns));
+}
+
+.normalbold {}
+
+header h1 {
+  color : white;
+}
+
+header h2 {
+  color : white;
+}
+
+.secondary-button {
+  padding-top      : 5px;
+  padding-right    : 15px;
+  padding-bottom   : 5px;
+  padding-left     : 15px;
+  color            : #004A7C;
+  border-color     : #004A7C;
+  border-style     : solid;
+  background-color : #FFFFFF;
+  font-family      : open-sans;
+  font-style       : normal;
+  font-weight      : 700;
+}
+
+.secondary-button:focus,
+.secondary-button:hover {
+  padding-top      : 5px;
+  padding-right    : 15px;
+  padding-bottom   : 5px;
+  padding-left     : 15px;
+  color            : #FFFFFF;
+  background-color : #004A7C;
+  font-family      : open-sans;
+  font-style       : normal;
+  font-weight      : 700;
+}
+
+a:link {
+  color           : #337ab7;
+  text-decoration : none;
+}
+
+a:hover {
+  text-decoration : underline;
+}
+
+footer a:link {
+  color : white;
+}
+
+footer a:visited {
+  color : #c7c8ca;
+}
+
+a:visited {
+  color           : #663399;
+  text-decoration : none;
+}
+
+main section {
+  margin-top    : 30px;
+  margin-bottom : 30px;
+}
+
+.service_type {
+  width       : 90%;
+  margin-left : 5%;
+  border-top  : medium solid #004a7c;
+}
+
+section ul li {
+  list-style-type : none;
+}
+
+table.bulk_rates_table th {
+  width       : 33%;
+  font-weight : 400;
+}
+
+.menu section {
+  margin-top    : 10px;
+  margin-bottom : 10px;
+}
+
+.menu li {
+  margin-left : 10px;
+  text-indent : -5px;
+}
+
+tbody tr:last-child td {
+  border-left : thin solid #C7C8CA;
+}
+
+details {
+  text-indent : 5%;
+}
+
+h4 span {
+  font-weight : 300;
+}
+
+tbody tr:last-child td:first-child {
+  border-left-style : none;
+}
+
+tr:hover {
+  background-color : rgba(119,120,123,0.25);
+}
+
+.column_1 {
+  width : 40%;
+}
+main {
+	margin-top: 100px;
+	margin-left: 15%;
+}

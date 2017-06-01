@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+.standard_table {}
+
+.sub_table {
+  width      : 1000px;
+  overflow-x : scroll;
+  background : #e4f6fd;
+}
+
+#County {
+  width : 8%;
+}
+
+#Zip {
+  width : 14%;
+}
+
+#Tax_Code {}
+
+#TERR_Code {
+  width : 4%;
+}
+
+#Disposal_Code {
+  width : 8%;
+}
+
+#City {
+  width : 9%;
+}
+
+#State {
+  width : 2%;
+}
+
+#Resi_SW {
+  width : 6%;
+}
+
+#Resi_Rec {
+  width : 6%;
+}
+
+#YW {
+  width : 6%;
+}
+
+#Commercial {
+  width : 6%;
+}
+
+#Commercial_Rec {
+  width : 6%;
+}
+
+#Ind {
+  width : 6%;
+}
+
+#Ind_Rec {
+  width : 6%;
+}
+
+#BC_City {
+  width : 10%;
+}
+
+#BC_State {
+  width : 2%;
+}
+
+#BC_County {
+  width : 10%;
+}
+
+#Acquisition_Code {
+  width : 10%;
+}
+
+#Admin_Fee {
+  width : 10%;
+}
+
+#Rate_Tax_App_Code {
+  width : 10%;
+}
+
+#BC_Other_Code {
+  width : 10%;
+}
+
+tbody tr:nth-child(even) {
+  background-color : rgba(247, 247, 248, 0.75);
+}
+
+#Data_Entry_Notes {}
+
+tr:nth-child(even):hover {
+  background-color : rgba(119,120,123,0.25);
+}
+
+.table_container {
+  width         : 100%;
+  height        : 800px;
+  clear         : both;
+  margin-bottom : 15px;
+  overflow      : auto;
+}
+
+div.table_container table {
+  width : 100%;
+}
+
+.caption_sub {
+  margin-bottom  : 20px;
+  padding-bottom : 5px;
+  color          : #004a7c;
+  border-bottom  : thin solid #c7c8ca;
+  text-align     : left;
+  font-weight    : 700;
+}
+
+.table_container .fixed_headers caption {
+  display : none;
+}
+
+thead.fixed_headers tr {
+  display : block;
+}
+
+.table_container .fixed_headers tbody.scrollContent {
+  display  : block;
+  width    : 100%;
+  overflow : auto;
+}

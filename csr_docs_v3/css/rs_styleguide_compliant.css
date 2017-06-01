@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+/* The following is a fallback font embed from Google's Open Web Fonts project, it's purpose is to make sure the Open Sans fonts are available in case the Adobe Typekit fonts are not working */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
+/* End fallback */
+
+/* This section is to set global parameters for the entire canvas */
+
+/* Sets the font for the entire document */
+* {
+	font-family: open-sans, open-sans-condensed, sans-serif;
+}
+
+/* Sets the coloration and behavior of links */
+a:link {
+  color           : #337ab7;
+  text-decoration : none;
+}
+
+a:hover {
+  text-decoration : underline;
+}
+
+footer a:link {
+  color : white;
+}
+
+footer a:visited {
+  color : #c7c8ca;
+}
+
+a:visited {
+  color           : #663399;
+  text-decoration : none;
+}
+
+
+/* Primary Palette (see Republic Services 2017 Full Brand Guidelines - http://insiderepublicservices.com/Marketing/Shared%20Documents/2017%20Full%20Brand%20Guidelines.pdf) */
+
+.primary-font-container-blue {
+	color: #004A7C;
+}
+
+.primary-section-container-blue {
+	background-color: #004A7C;
+	color: #FFFFFF;
+}
+
+.primary-font-light-blue {
+	color: #00ADEF;
+}
+
+.primary-section-light-blue {
+	background-color: #00ADEF;
+	color: #FFFFFF;
+}
+.primary-font-dark-gray {
+	color: #76787A;
+}
+.primary-section-dark-gray {
+	background-color: #76787A;
+	color: #FFFFFF;
+}
+
+.primary-font-white {
+	color: #FFFFFF;
+}
+
+.primary-font-republic-services-star-red {
+	color: #D01947;
+}
+
+.primary-section-republic-services-star-red {
+	background-color: #D01947;
+	color: #FFFFFF;
+}
+
+/* Secondary Palette (see Republic Services 2017 Full Brand Guidelines - http://insiderepublicservices.com/Marketing/Shared%20Documents/2017%20Full%20Brand%20Guidelines.pdf) */
+
+.secondary-font-golden-orange {
+	color: #F7A700;
+}
+.secondary-section-golden-orange {
+	background-color: #F7A700;
+	color: #000000;
+}
+.secondary-font-pale-gray {
+	color: #C6C8CA;
+}
+.secondary-section-pale-gray {
+	background-color: #C6C8CA;
+	color: #000000;
+}
+.secondary-font-pale-blue {
+	color: #76787A;
+}
+.secondary-section-pale-blue {
+	background-color: #BFE0F4;
+	color: #000000;
+}
+.secondary-font-orange {
+	color: #F38A00;
+}
+.secondary-section-orange {
+	background-color: #F38A00;
+	color: #000000;
+}
+
+/* Black and White Palette (see Republic Services 2017 Full Brand Guidelines - http://insiderepublicservices.com/Marketing/Shared%20Documents/2017%20Full%20Brand%20Guidelines.pdf) */
+
+.bw-font-black {
+	color: #F7A700;
+}
+.bw-section-black {
+	background-color: #F7A700;
+	color: #000000;
+}
+.bw-font-pale-gray {
+	color: #C6C8CA;
+}
+.bw-section-pale-gray {
+	background-color: #C6C8CA;
+	color: #000000;
+}
+.bw-font-dark-gray {
+	color: #76787A;
+}
+.bw-section-dark-gray {
+	background-color: #BFE0F4;
+	color: #000000;
+}
+
+/* Website Color Palette (see Republic Services 2017 Full Brand Guidelines - http://insiderepublicservices.com/Marketing/Shared%20Documents/2017%20Full%20Brand%20Guidelines.pdf) */
+
+.web-font-whitesmoke {
+	color: #F7F7F8;
+}
+.web-section-whitesmoke {
+	background-color: #F7F7F8;
+	color: #77787b;
+}
+.web-font-deep-sky-blue {
+	color: #00ADEF;
+}
+.web-section-deep-sky-blue {
+	background-color: #00ADEF;
+	color: #FFFFFF;
+}
+.web-font-container-blue {
+	color: #004A7C;
+}
+.web-section-container-blue {
+	background-color: #004A7C;
+	color: #FFFFFF;
+}
+
+.web-font-republic-services-star-red {
+	color: #D01947;
+}
+
+.web-section-republic-services-star-red {
+	background-color: #D01947;
+	color: #FFFFFF;
+}
+
+.web-font-alice-blue {
+	color: #E4F6FD;
+}
+
+.web-section-alice-blue {
+	background-color: #E4F6FD;
+	color: #77787B;
+}
+
+.web-font-mango-tango {
+	color: #D56C00;
+}
+
+.web-section-mango-tango {
+	background-color: #D56C00;
+	color: #FFFFFF;
+}
+
+.web-font-storm-gray {
+	color: #77787B;
+}
+
+.web-section-storm-gray {
+	background-color: #77787B;
+	color: #FFFFFF;
+}
+
+.web-font-eclipse {
+	color: #373737;
+}
+
+.web-section-eclipse {
+	background-color: #373737;
+	color: #FFFFFF;
+}
+
+.web-font-link-water {
+	color: #C7C8CA;
+}
+
+.web-section-link-water {
+	background-color: #C7C8CA;
+	color: #FFFFFF;
+}
+
+.web-font-tangerine {
+	color: #F38A00;
+}
+
+.web-section-tangerine {
+	background-color: #F38A00;
+	color: #FFFFFF;
+}
+/* Headline Standards (see Republic Services 2017 Full Brand Guidelines - http://insiderepublicservices.com/Marketing/Shared%20Documents/2017%20Full%20Brand%20Guidelines.pdf) */
+
+h1 {
+	font-family: open-sans, open-sans-condensed, sans-serif;
+	color: #004A7C;
+	text-align: center;
+	font-weight: 300;
+}
+h2 {
+	font-family: open-sans;
+	font-weight: 300;
+	color: #004A7C;
+}
+h3 {
+	color: #004A7C;
+	font-family: open-sans, open-sans-condensed, sans-serif;
+	font-weight: 400;
+}
+h4 {
+	color: #004A7C;
+	font-family: open-sans, open-sans-condensed, sans-serif;
+	font-weight: 700;
+}
+.rs-h4-small {
+	color: #004A7C;
+	font-family: open-sans, open-sans-condensed, sans-serif;
+	font-weight: 700;
+	font-size: small;
+}
+#heading {
+	background-color: #004A7C;
+
+}
+header h1, header h2 {
+	color: #ffffff;
+}
+
+
+h5 {
+	color: #004A7C;
+	font-family: open-sans, open-sans-condensed, sans-serif;
+	font-weight: 300;
+}
+.address {
+	font-weight: 700;
+}
+
+
+/* Button Color Palette (see Republic Services 2017 Full Brand Guidelines - http://insiderepublicservices.com/Marketing/Shared%20Documents/2017%20Full%20Brand%20Guidelines.pdf) */
+
+.btn {
+	font-family: open-sans, open-sans-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	border-style: solid;
+	border-radius: 0;
+	margin: 2px;
+	border-width: thin;
+}
+
+.btn-default {
+	color: #00ADEF;
+	border-color: #00ADEF;
+}
+.btn-default:link {
+	color: #00ADEF;
+}
+
+
+.btn-primary {
+	border: none;
+	background-color: #F38A00;
+	color: #FFFFFF;
+}
+.btn-primary:link {
+	color: #FFFFFF;
+}
+
+.btn-primary:hover {
+	background-color: #FFFFFF;
+	color: #F38A00;
+	border-color: #F38A00;
+}
+
+.btn-secondary {
+	color: #004A7C;
+	border-color: #004A7C;
+}
+.btn-secondary:link {
+	color: #004A7C;
+}
+
+.btn-secondary:hover {
+	border: none;
+	color: #FFFFFF;
+	background-color: #004A7C;
+}
+
+.btn-tertiary {
+	color: #FFFFFF;
+	border: none;
+	background-color: #004A7C;
+}
+.btn-tertiary:link {
+	color: #FFFFFF;
+}
+.btn-tertiary:hover {
+	color: #FFFFFF;
+	border: none;
+	background-color: #00ADEF;
+}
+
+.btn-off-solid {
+	color: #FFFFFF;
+	border: none;
+	background-color: #C7C8CA;
+
+}
+.btn-off-solid:link {
+	color: #FFFFFF;
+}
+.btn-off-solid:hover {
+	color: #C7C8CA;
+	background-color: #FFFFFF;
+	border: thin solid #C7C8CA;
+}
+.btn-off-outline {
+	color: #c7c8ca;
+	border-color: #c7c8ca;
+}
+.btn-off-outline:link {
+	color: #c7c8ca;
+}
+.btn-off-outline:hover {
+	background-color: #c7c8ca;
+	border: none;
+	color: #FFFFFF;
+}
+footer {
+	background-color: #C7C8CA;
+
+}
+#footer-gray {
+	background-color: #C7C8CA;
+	width: 100%;
+}
+
+#logo_with_bars {
+	
+
+}
+#blue-bar {
+	background-color: #00ADEF;
+	height: 25px;
+}
+#blue-bar:before {
+	background-color: #00ADEF;
+	content: "";
+	position: absolute;
+	left: -6px;
+	width: 20px;
+	height: 025px;
+	display: block;
+	z-index: -1;
+	transform: skew(-20deg);
+  }
+#container-blue-bar:before {
+	background-color: #004A7C;
+	content: "";
+	position: absolute;
+	left: -6px;
+	width: 20px;
+	height: 025px;
+	display: block;
+	z-index: -1;
+	transform: skew(-20deg);
+  }
+
+#container-blue-bar {
+	background-color: #004A7C;
+	height: 25px;
+}
+#footer-logo {
+	max-width: 307px;
+	margin: 25px auto;
+	min-width: 100px;
+	display: block;
+}
+#footer-section {
+	margin-top: 20em;
+}
+main section {
+	padding: 2em 0;
+	border-bottom: thin solid #C7C8CA;
+
+}
+main section section {
+	border: none;
+	margin: 1em 0;
+}
+.js-error {
+	color: Red;
+}
+.data-field-header   {
+	color: #00ADEF;
+}
+.data-line {
+	padding: .5em 0;
+	border-bottom: thin solid #C7C8CA;
+
+}
+.data-line:last-child {
+	padding: .5em 0;
+	border-bottom-style: none;
+
+}
+.collapsing-section .row.data-line:last-child {
+	border-bottom: thin solid #C7C8CA;
+}
+
+
+.not-offered-toggle {
+}
+#fees-delivery {
+}
+#fees-removal {
+}
+#fees-frf {
+}
+#fees-erf {
+}
+#fees-admin {
+}
+#fees-reinstatement {
+}
+#fees-interupt {
+}
+#fees-latefee {
+}
+#fees-container-replacement {
+}
+#fees-other {
+}
+#info-cart-colors {
+}
+#info-container-replacement {
+}
+#info-container-pickup {
+}
+#info-csa {
+}
+#info-walkin {
+}
+#appliance-limit {
+}
+#appliance-serviced-by {
+}
+#appliance-service-day {
+}
+#appliance-service-freq {
+}
+#appliance-notes {
+}
+#appliance-acceptable {
+}
+#con-rate {
+}
+#con-limit {
+}
+#con-notes {
+}
+#con-acceptable {
+}
+#ewaste-acceptable {
+}

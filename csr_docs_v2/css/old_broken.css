@@ -1,0 +1,114 @@
+@charset utf-8;
+
+.tablelabels {
+top:auto;
+color:#000;
+background-color:#f9f6ab;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:10pt;
+font-weight:700;
+}
+
+tr {
+color:red;
+vertical-align:top;
+}
+
+.normal {
+color:#000;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:12pt;
+}
+
+.normalbold {
+color:#000;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:12pt;
+font-weight:700;
+}
+
+.title {
+top:auto;
+color:#000;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:24px;
+font-style:italic;
+font-weight:700;
+}
+
+.tabletext {
+top:auto;
+color:#000;
+text-align:left;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:10pt;
+}
+
+.tablebold {
+top:auto;
+color:#000;
+text-align:left;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:10pt;
+font-weight:700;
+}
+
+.tableheader {
+top:auto;
+color:#fff;
+background-color:#18476a;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:10pt;
+font-weight:700;
+}
+
+.tablelabels2 {
+top:auto;
+width:21%;
+color:#000;
+background-color:#b0cfeb;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:10pt;
+font-weight:700;
+}
+
+.shaded {
+color:#000;
+background-color:#ebebeb;
+text-align:left;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:10pt;
+}
+
+table {
+width:100%;
+}
+
+.tablefontred {
+top:auto;
+color:red;
+text-align:left;
+vertical-align:text-top;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:10pt;
+}
+
+caption {
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+-webkit-box-shadow:0;
+box-shadow:0;
+text-align:left;
+text-transform:capitalize;
+border-style:ridge;
+padding:4px;
+}

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/**
+ * DO NOT remove the lines with "-webkit..." or "-moz...", doing so WILL break
+ * the page display.
+ */
+
+body {
+  color          : #000000;
+  vertical-align : text-top;
+  font-family    : Gotham,
+                   "Helvetica Neue",
+                   Helvetica,
+                   Arial,
+                   sans-serif;
+}
+
+article {
+  -webkit-column-count : 3;
+  column-count         : 3;
+  /* Chrome, Safari, Opera */
+}
+
+table {
+  font-size : 10pt;
+}
+
+.data_columns {
+  width : calc(80%/2);
+}
+
+.row-header {
+  /* [disabled]background-color: #b0cfeb; */
+  width          : 20%;
+  vertical-align : top;
+}
+
+th {
+  text-align     : left;
+  vertical-align : top;
+  font-size      : 10pt;
+}
+
+td {
+  vertical-align : top;
+}
+
+thead {
+  background-color : #f9f6ab;
+}

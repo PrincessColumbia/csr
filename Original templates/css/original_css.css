@@ -1,0 +1,78 @@
+@charset "utf-8";
+tr {
+	vertical-align: top
+}
+.normal {
+	color: #000000;
+	font-size: 12pt;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	vertical-align: text-top;
+}
+.normalbold {
+	color: #000000;
+	font-size: 12pt;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	vertical-align: text-top;
+}
+.title {
+	color: #000000;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	top: auto;
+}
+.tablefontred {
+	color: #FF0000;
+	font-size: 10pt;
+	text-align: left;
+	vertical-align: text-top;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	top: auto;
+}
+.tabletext {
+	color: #000000;
+	font-size: 10pt;
+	text-align: left;
+	vertical-align: text-top;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	top: auto;
+}
+.tablebold {
+	color: #000000;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: text-top;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	vertical-align: text-top;
+	top: auto;
+}
+.tableheader {
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #18476A;
+	font-size: 10pt;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	vertical-align: text-top;
+	top: auto;
+}
+.tablelabels {
+	color: #000000;
+	font-weight: bold;
+	background-color: #F9F6AB;
+	font-size: 10pt;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	vertical-align: text-top;
+	top: auto;
+}
+.tablelabels2 {
+	color: #000000;
+	font-weight: bold;
+	background-color: #B0CFEB;
+	font-size: 10pt;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	vertical-align: text-top;
+	top: auto;
+}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.address {
+  color       : #004a7c;
+  font-family : open-sans;
+  font-style  : normal;
+  font-weight : 700;
+}
+
+.title {
+  position          : fixed;
+  background-image  : url(../images/hazard.jpg);
+  background-repeat : repeat;
+  background-size   : 15% auto;
+}
+
+.HALT {
+  display          : none;
+  width            : 100%;
+  color            : #FFFFFF;
+  background-color : #FF0000;
+  text-align       : center;
+  font-family      : open-sans;
+  font-size        : xx-large;
+  font-style       : normal;
+  font-weight      : 700;
+}
+
+h1:hover + div {
+  display : block;
+}
+
+.menu {
+  list-style : none;
+}
+
+main {
+  margin-top   : 100px;
+  margin-right : 1%;
+  margin-left  : 20%;
+}
+
+.section_header {}
+
+footer {
+  margin-top       : 100%;
+  color            : WHITE;
+  background-color : #76787A;
+  font-size        : 13px;
+}
+
+.block_section {
+  border-top : medium solid #f38a00;
+}

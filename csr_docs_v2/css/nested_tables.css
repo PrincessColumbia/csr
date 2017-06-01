@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.Nested_Rates_Table {
+  margin        : 0px;
+  border-top    : thin solid #F7F7F8;
+  border-right  : thin solid #c7c8ca;
+  border-bottom : thin solid #F7F7F8;
+  border-left   : thin solid #F7F7F8;
+}
+
+.Nested_Extra_Serv_Rates_Table {
+  margin : 0;
+  border : thin solid #c7c8ca;
+}
+
+.Nested_Rates_Table td {
+  border : thin solid #C7C8CA;
+}
+
+.Nested_Extra_Serv_Rates_Table td {
+  border : thin solid #C7C8CA;
+}
+
+.Nested_Extra_Serv_Rates_Table td {
+  border : thin solid #C7C8CA;
+}
+
+.Nested_Rates_Table tr:last-child {
+  border : thin solid #C7C8CA;
+}
+
+.Nested_Extra_Serv_Rates_Table tr:last-child {
+  border : thin solid #C7C8CA;
+}
+
+.Nested_Rates_Table th[scope="col"] {
+  color            : white;
+  background-color : #f38a00;
+  font-weight      : 400;
+}
+
+.Nested_Extra_Serv_Rates_Table th[scope="col"] {
+  color            : white;
+  background-color : #f38a00;
+  font-weight      : 400;
+}
+
+.rate {
+  width : 25%;
+}
+
+.stop_type {
+  width : 6%;
+}
+
+.rate_type {
+  width : 6%;
+}
+
+.district_code {
+  width : 6%;
+}
+
+.charge_code {
+  width : 8%;
+}
+
+.charge_freq {
+  width : 17%;
+}
+
+.contract_and_group {
+  width : 16%;
+}
+
+.account_type {
+  width : auto;
+}
+
+.Nested_Rates_Table tr:hover {
+  background-color : white;
+}
+
+.Nested_Extra_Serv_Rates_Table tr:hover {
+  background-color : white;
+}

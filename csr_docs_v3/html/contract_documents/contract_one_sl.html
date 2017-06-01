@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSR v.2 Stylesheet</title>
+
+<!-- End RS CSS links -->
+
+<!-- The following libraries are for Bootstrap 3.3.7 and jQuery 3.2.1 from trusted CDN sources. Final versions will want to use a locally sourced copy of these libraries -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- End Bootstrap and jQuery links -->
+
+<!-- The following library is to embed the Open Sans font used by the Republic Services Brand Guidelines v.1.5 from the Adobe Typekit website -->
+
+<script src="https://use.typekit.net/urd7waz.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/open-sans:n3,n7:default;open-sans-condensed:n3,n7:default.js" type="text/javascript"></script>
+
+<!-- Links to the Republic Services Brand Guidelines v.1.5 -->
+<!-- This guide can be found at http://insiderepublicservices.com/Marketing/Shared%20Documents/2017%20Full%20Brand%20Guidelines.pdf -->
+
+<link rel="stylesheet" type="text/css" href="../../css/rs_styleguide_compliant.css">
+<link rel="stylesheet" type="text/css" href="../../css/rs_styleguide_compliant_tables.css">
+
+<!-- This section is for portions of code that are specific to this page ONLY. It is never to be used for "universal" elements or formatting that applies to multiple pages -->
+<style type="text/css">
+.data_columns {
+ --data-number-of-columns: 3;
+}
+</style>
+
+<!-- This script changes the placeholders in this document to live data, DO NOT delete this line! -->
+<!--<script src="../../js/contract-data.js"></script>
+-->
+<!-- This script is sample data to make the above script work. Once this page is connected to a data source, this line can be deleted. -->
+<!--<script src="../../js/sampledata.js"></script>
+-->
+</head>
+
+<body>
+<div class="container-fluid" id="heading">
+  <div class="row">
+    <div class="col-xs-12">
+      <header class="container-fluid">
+        <div class="row">
+          <div class="col-xs-2">&nbsp;</div>
+          <div class="col-xs-10">
+            <h1>DIV 
+              
+              <!-- A field for the Division Number, if this appears as a generic field name enclosed in brackets with red text, there is an error in the Javascript --> 
+              <span id="divNumField"><span class="js-error">[DIVISION NUMBER]</span></span> 
+              
+              <!-- A field for the class of the geo (HOA, MUNI, etc.), if this appears as a generic field name enclosed in brackets with red text, there is an error in the Javascript --> 
+              <span id="classIdField"><span class="js-error">[CLASS]</span></span> - 
+              
+              <!-- A field for the property name, if this appears as a generic field name enclosed in brackets with red text, there is an error in the Javascript --> 
+              <span id="propertyNameField"><span class="js-error">[PROPERTY NAME]</span></span> - 
+              
+              <!-- A field for the municipality identifier ("City of...", "County of...", etc.), if this appears as a generic field name enclosed in brackets with red text, there is an error in the Javascript --> 
+              <span id="muniIdField"><span class="js-error">[MUNI ID]</span></span> <span id="municipailityNameField"><span class="js-error">[MUNICIPALITY NAME]</span></span>, 
+              <!--  --> 
+              <span id="stateIdTitle"><span class="js-error">[STATE  ID]</span></span></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">&nbsp;</div>
+          <div class="col-xs-10">
+            <h2>Lawson #: <span id="lawsonNumField"><span class="js-error">[LAWNUM]</span></span><span id="pricingIdField"><span class="js-error">[PRICING]</span></span></h2>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="canvas">
+  <div class="row">
+    <div class="col-sm-2" id="navigation-pane">
+      <nav>
+        <section>
+          <h3><a href="#contact">Contact, Contract, &amp; Hours</a></h3>
+        </section>
+        <section>
+          <h3><a href="#Regular_Services">Regular Services</a></h3>
+          <ul>
+            <li><a href="#Solid_Waste">Solid Waste Service</a></li>
+            <li><a href="#Recycle_Service">Recycle Service</a></li>
+            <li><a href="#Yard_Waste">Yard Waste Service</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="#fees-info">Fees &amp; Information</a></h3>
+          <ul>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#other-info">Other Division Information</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="#extra-services">Extra Services</a></h3>
+          <ul>
+            <li><a href="#appliances">Appliances</a></li>
+            <li><a href="#bulk">Bulk</a></li>
+            <li><a href="#construction">Construction Debris</a></li>
+            <li><a href="#extra-pu">Extra Pick-up</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+    <div class="col-sm-10" id="content">
+      <main class="container-fluid"> <a name="top" title="Top of page" class="anchor" id="top"></a>
+        <div class="row">
+          <section class="container-fluid"> <a name="contact" title="Contact, Contract, &amp; Hours" class="anchor" id="contact"></a>
+            <h4>Contact, Contract, &amp; Hours</h4>
+            <div class="container-fluid">
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">City &amp; State or County &amp; State</div>
+                <div class="col-xs-9"> <span id="municipailityNameDataField"><span class="js-error">CITY NAME SHOULD NEVER BE BLANK, CONTACT SUBJECT MATTER EXPERT FOR DIVISION IF NO CITY LISTED</span></span>, <span id="stateIdDataField"><span class="js-error">STATE SHOULD NEVER BE BLANK, CONTACT SUBJECT MATTER EXPERT FOR DIVISION IF NO STATE LISTED</span></span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Website</div>
+                <div class="col-xs-9"><a id="website" href="#" target="_self">None</a></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Contact Title</div>
+                <div class="col-xs-9"><span id="contact-title">Do not refer customer outside of RS</span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Contact Phone #</div>
+                <div class="col-xs-9"><span id="contact-phone">Do not refer customer outside of RS</span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Contract #</div>
+                <div class="col-xs-9"><span id="contract-num">Do not refer customer outside of RS</span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Contract Group #</div>
+                <div class="col-xs-9"><span id="contract-group">Does not apply</span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Contract Notes</div>
+                <div class="col-xs-9"><span id="contract-notes">No special contract notes</span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Summary Routed Account #</div>
+                <div class="col-xs-9"><span id="summary-acct-num">Individually routed account</span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Republic Services (RS) Site Serviced By (City, ST)</div>
+                <div class="col-xs-9"><span id="serviced-by"><span class="js-error">THIS FIELD SHOULD NEVER BE EMPTY, CONTACT SUBJECT MATTER EXPERT FOR THE DIVISION IF THIS FIELD IS BLANK</span></span></div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">RS Site Collection Hours Start &amp; End Times (Time Zone)</div>
+                <div class="col-xs-9"> <span id="collection-hours"><span class="js-error">THIS FIELD SHOULD NEVER BE EMPTY, CONTACT SUBJECT MATTER EXPERT FOR THE DIVISION IF THIS FIELD IS BLANK</span></span> </div>
+              </div>
+              <div class="row data-line">
+                <div class="col-xs-3 data-field-header">Promotions</div>
+                <div class="col-xs-9"><span id="promotions-field">No promotions at this time</span></div>
+              </div>
+            </div>
+            <a href="#top" title="Back to top link" class="btn btn-default">Back to Top</a> </section>
+        </div>
+        <div class="row" id="Reg-service"><a href="#" class="anchor" id="Regular_Services"></a>
+          <h4>Regular Services</h4>
+          <section class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12"><a name="Solid_Waste" title="Solid Waste Service" id="Solid_Waste"></a>
+                  <h4 class="rs-h4-small">Solid Waste Service<span id="sws-not-offered-notice"></span></h4>
+                  <div class="container-fluid service-section">
+                    <div class="collapsing-section" id="sws-offered-toggle">
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Service Type </div>
+                        <div class="col-xs-9" id="sws-type"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Rate </div>
+                        <div class="col-xs-9" id="sw_rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Service Level </div>
+                        <div class="col-xs-9" id="sws-level">No RS Containers provided</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Container Qty/Size/Type/Color </div>
+                        <div class="col-xs-9" id="sw-container-details">Not offered</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Container Delivered by </div>
+                        <div class="col-xs-9" id="sw-container-delivered">No RS Containers provided</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Service Day </div>
+                        <div class="col-xs-9"><span id="sw-service-day"></span> <a href="#" target="_blank" id="sw-day-maps-link"></a></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Service Frequency </div>
+                        <div class="col-xs-9"><span id="sw-service-freq"></span> <a href="https://salesforcemap.repsrv.com/RouteInfo/index.html" target="_blank" id="sw-service-freq-link">Maps</a></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Additional Container Rental Rate </div>
+                        <div class="col-xs-9" id="sw-additional-container-rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Additional Container Qty/Size/Type/Color </div>
+                        <div class="col-xs-9" id="swAdd"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Solid Waste Additional Container Delivered by </div>
+                        <div class="col-xs-9" id="sw-additional-container-delivered"></div>
+                      </div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Solid Waste Notes</div>
+                      <div class="col-xs-9" id="sw-notes"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Acceptable/Non-Acceptable Items &amp; Preparation List </div>
+                      <div class="col-xs-9" id="sw-acceptable-list">Refer to <a id="sw-disposal-landfill" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12"><a name="Recycling_Service" title="Recycling Service" id="Recycling_Service"></a>
+                  <h4 class="rs-h4-small">Recycle Service<span id="rec-not-offered-notice"></span></h4>
+                  <div class="container-fluid service-section">
+                    <div class="collapsing-section" id="rec-offered-toggle">
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycle Service Type </div>
+                        <div class="col-xs-9" id="rec-type"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycle Waste Rate </div>
+                        <div class="col-xs-9" id="rec_rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Service Level </div>
+                        <div class="col-xs-9" id="rec-level">No RS Containers provided</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Container Qty/Size/Type/Color </div>
+                        <div class="col-xs-9" id="rec-container-details">Not offered</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Container Delivered by </div>
+                        <div class="col-xs-9" id="rec-container-delivered">No RS Containers provided</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Service Day </div>
+                        <div class="col-xs-9"><span id="rec-service-day"></span> <a href="#" target="_blank" id="rec-day-maps-link"></a></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Service Frequency </div>
+                        <div class="col-xs-9"><span id="rec-service-freq"></span> <a href="https://salesforcemap.repsrv.com/RouteInfo/index.html" target="_blank" id="rec-service-freq-link">Maps</a></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Additional Container Rental Rate </div>
+                        <div class="col-xs-9" id="rec-additional-container-rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Additional Container Qty/Size/Type/Color </div>
+                        <div class="col-xs-9" id="recAdd"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Recycling Additional Container Delivered by </div>
+                        <div class="col-xs-9" id="rec-additional-container-delivered"></div>
+                      </div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Recycling Notes</div>
+                      <div class="col-xs-9" id="rec-notes"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Acceptable/Non-Acceptable Items &amp; Preparation List </div>
+                      <div class="col-xs-9" id="rec-acceptable-list">Refer to <a id="rec-disposal-landfill" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12"><a name="Yard_Waste_Services" title="Yard Waste Services" id="Yard_Waste_Services"></a>
+                  <h4 class="rs-h4-small">Yard Waste Service<span id="yw-not-offered-notice"></span></h4>
+                  <div class="container-fluid service-section">
+                    <div class="collapsing-section" id="yw-offered-toggle">
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Service Type </div>
+                        <div class="col-xs-9" id="yw-type"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Waste Rate </div>
+                        <div class="col-xs-9" id="yw_rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Service Level </div>
+                        <div class="col-xs-9" id="yw-level">No RS Containers provided</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Container Qty/Size/Type/Color </div>
+                        <div class="col-xs-9" id="yw-container-details">Not offered</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Container Delivered by </div>
+                        <div class="col-xs-9" id="yw-container-delivered">No RS Containers provided</div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Service Day </div>
+                        <div class="col-xs-9"><span id="yw-service-day"></span> <a href="#" target="_blank" id="yw-day-maps-link"></a></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Service Frequency </div>
+                        <div class="col-xs-9"><span id="yw-service-freq"></span> <a href="https://salesforcemap.repsrv.com/RouteInfo/index.html" target="_blank" id="yw-service-freq-link">Maps</a></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Additional Container Rental Rate </div>
+                        <div class="col-xs-9" id="yw-additional-container-rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Additional Container Qty/Size/Type/Color </div>
+                        <div class="col-xs-9" id="ywAdd"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Yard Waste Additional Container Delivered by </div>
+                        <div class="col-xs-9" id="yw-additional-container-delivered"></div>
+                      </div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Yard Waste Notes</div>
+                      <div class="col-xs-9" id="yw-notes"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Acceptable/Non-Acceptable Items &amp; Preparation List </div>
+                      <div class="col-xs-9" id="yw-acceptable-list">Refer to <a id="yw-disposal-landfill" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#top" title="Back to top link" class="btn btn-default">Back to Top</a> </section>
+        </div>
+        <div class="row" id="Fees_and_Information"> <a name="section_3" title="Text samples with color swatches" class="anchor" id="section_3"></a>
+          <h4>Fees &amp; Information</h4>
+          <section class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12"><a name="fees-info" title="Fees &amp; Information" id="fees"></a>
+                  <h4 class="rs-h4-small">Fees</h4>
+                  <div class="container-fluid service-section">
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Delivery</div>
+                      <div class="col-xs-9" id="fees-delivery"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Removal</div>
+                      <div class="col-xs-9" id="fees-removal"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">FRF - Fuel Recovery Fee</div>
+                      <div class="col-xs-9" id="fees-frf"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">ERF - Environmental Fee</div>
+                      <div class="col-xs-9" id="fees-erf"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Admin - Administration Fee</div>
+                      <div class="col-xs-9" id="fees-admin"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Service Reinstatement Fee</div>
+                      <div class="col-xs-9" id="fees-reinstatement"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Service Interrupt Fee</div>
+                      <div class="col-xs-9" id="fees-interupt"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Late Fee</div>
+                      <div class="col-xs-9" id="fees-latefee"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Container Replacement Fee</div>
+                      <div class="col-xs-9" id="fees-container-replacement"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Other Fees</div>
+                      <div class="col-xs-9" id="fees-other"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12"><a name="fees-info" title="Fees &amp; Information" id="info"></a>
+                  <h4 class="rs-h4-small">Other Division Information</h4>
+                  <div class="container-fluid service-section">
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Former Company Cart Colors (Previous Acquisitions)</div>
+                      <div class="col-xs-9" id="info-cart-colors"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Container Replacement Policty</div>
+                      <div class="col-xs-9" id="info-container-replacement"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Container Pick Up/Return at Division</div>
+                      <div class="col-xs-9" id="info-container-pickup"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">CSA - Sign at Division</div>
+                      <div class="col-xs-9" id="info-csa"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Walk-in Payment Option</div>
+                      <div class="col-xs-9" id="info-walkin"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#top" title="Back to top link" class="btn btn-default">Back to Top</a> </section>
+        </div>
+        <div class="row" id="Extra"> <a name="table" title="A Basic Table" class="anchor" id="section_4"></a>
+          <h4>Extra Services</h4>
+          <section class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12"><a name="appliances" title="Appliances" id="appliances"></a>
+                  <h4 class="rs-h4-small">Appliances<span id="appliance-not-offered-notice"></span></h4>
+                  <div class="container-fluid service-section">
+                    <div class="collapsing-section" id="appliance-offered-toggle">
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Appliance Rate</div>
+                        <div class="col-xs-9" id="appliance-rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Appliance Limit</div>
+                        <div class="col-xs-9" id="appliance-limit"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Appliance Serviced By</div>
+                        <div class="col-xs-9" id="appliance-serviced-by"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Appliance Service Day</div>
+                        <div class="col-xs-9" id="appliance-service-day"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Appliance Service Frequency</div>
+                        <div class="col-xs-9" id="appliance-service-freq"></div>
+                      </div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Appliance Notes</div>
+                      <div class="col-xs-9" id="appliance-notes"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Acceptable/Non-Acceptable items &amp; Preparation List</div>
+                      <div class="col-xs-9" id="appliance-acceptable">Refer to <a id="appliance-disposal-landfill" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12"><a name="Bulks" title="Bulks" id="bulk"></a>
+                  <h4 class="rs-h4-small">Bulk</h4>
+                  <div class="container-fluid service-section">
+                    <div class="collapsing-section" id="bulk-offered-toggle">
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Bulk Rate</div>
+                        <div class="col-xs-9" id="bulk-rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Bulk Limit</div>
+                        <div class="col-xs-9" id="bulk-limit"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Bulk Serviced By</div>
+                        <div class="col-xs-9" id="bulk-serviced-by"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Bulk Service Day</div>
+                        <div class="col-xs-9" id="bulk-service-day"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Bulk Service Frequency</div>
+                        <div class="col-xs-9" id="bulk-service-freq"></div>
+                      </div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Bulk Notes</div>
+                      <div class="col-xs-9" id="bulk-notes"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Acceptable/Non-Acceptable items &amp; Preparation List</div>
+                      <div class="col-xs-9" id="bulk-acceptable">Refer to <a id="bulk-disposal-landfill" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12"><a name="Bulks" title="Bulks" id="construction"></a>
+                  <h4 class="rs-h4-small">Construction Debris</h4>
+                  <div class="container-fluid service-section">
+                    <div class="collapsing-section" id="con-offered-toggle">
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Construction Debris Rate(s)</div>
+                        <div class="col-xs-9" id="con-rate"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Construction Debris Limit</div>
+                        <div class="col-xs-9" id="con-limit"></div>
+                      </div>
+</div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Construction Debris Notes</div>
+                      <div class="col-xs-9" id="con-notes"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Acceptable/Non-Acceptable items &amp; Preparation List</div>
+                      <div class="col-xs-9" id="con-acceptable">Refer to <a id="con-disposal-landfill" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12"><a name="Bulks" title="Bulks" id="ewaste"></a>
+                  <h4 class="rs-h4-small">Electronics Recycling</h4>
+                  <div class="container-fluid service-section">
+                    <div class="collapsing-section" id="ewaste-offered-toggle">
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Electronics Recycling Rate(s)</div>
+                        <div class="col-xs-9" id="bulk-rate3"></div>
+                      </div>
+                      <div class="row data-line">
+                        <div class="col-xs-3 data-field-header">Electronics Recycling Limit</div>
+                        <div class="col-xs-9" id="bulk-limit3"></div>
+                      </div>
+</div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Electronics Recycling Notes</div>
+                      <div class="col-xs-9" id="bulk-notes3"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Acceptable/Non-Acceptable items &amp; Preparation List</div>
+                      <div class="col-xs-9" id="ewaste-acceptable">Refer to <a id="ewaste-disposal-landfill" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12"><a name="Bulks" title="Bulks" id="extra-pick-up"></a>
+                  <h4 class="rs-h4-small">Extra Pick-Up</h4>
+                  <div class="container-fluid service-section">
+<div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Extra Pick Up Charge - Scheduled on Same Service Day (Solid Waste, REC, or YW)</div>
+                      <div class="col-xs-9" id="bulk-notes4"></div>
+                    </div>
+                    <div class="row data-line">
+                      <div class="col-xs-3 data-field-header">Extra Pick Up Charge - NOT Scheduled on Same Service Day (Solid Waste, REC, or YW)</div>
+                      <div class="col-xs-9" id="bulk-acceptable4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#top" title="Back to top link" class="btn btn-default">Back to Top</a> </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+<div id="footer-section">
+  <div class="text-center" id="logo_with_bars">
+    <div class="row">
+      <div class="col-xs-3"></div>
+      <div class="col-xs-3"></div>
+      <div class="col-xs-6"><img src="../../images/RS_Logo.jpg" alt="Republic Services Logo" class="img-responsive" id="footer-logo"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3"></div>
+      <div class="col-xs-3"></div>
+      <div class="col-xs-6" id="container-blue-bar"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3"></div>
+      <div class="col-xs-9" id="blue-bar"></div>
+    </div>
+  </div>
+  <footer class="container-fluid text-center"
+      >
+    <div class="row">
+      <div class="col-lg-12">Last updated: 
+        <!-- #BeginDate format:Am1a -->May 31, 2017 4:59 PM<!-- #EndDate --> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="copyleft"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">CSR v.2</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Chris McFarland</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></div>
+    </div>
+  </footer>
+</div>
+<script src="../../js/contract-one-sl.js"></script>
+</body>
+</html>

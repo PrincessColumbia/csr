@@ -1,0 +1,41 @@
+@charset "utf-8";
+.headcol {
+	position: absolute;
+	width: 5em;
+	left: 0;
+	top: auto;
+	border-top-width: 1px;
+	margin-top: -1px;
+
+}
+.headcol:before {
+	content: "Row ";
+}
+
+.scrolling {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-top: 1px solid grey;
+}
+
+.long {
+	letter-spacing: 1em;
+	background: yellow;
+
+}
+table.scrolling td, th {
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-top: 0px solid;
+	margin: 0;
+	white-space: nowrap;
+
+}
+.scrolling_table {
+	width: 500px;
+	overflow-x: scroll;
+	margin-left: 5em;
+	padding: 0;
+	overflow-y: visible;
+}
