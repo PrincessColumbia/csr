@@ -116,7 +116,6 @@ bulkServiceDay = ""; // If a day isn't entered, defaults to "Verify service day 
 bulkServiceFrequency = "";
 bulkNotes = "";
 
-/*
 
 // Construction Debris
 
@@ -124,6 +123,8 @@ offeredCon = "No"; //Use only "Yes" or "No" to indicate if the service is offere
 conRate = "";
 conLimit = "";
 conNotes = "";
+
+/*
 
 // Electronic Waste
 
@@ -170,63 +171,11 @@ var anchorLandfill = "#Landfill";
 var anchorRec = "#Recycle";
 var anchorYw = "#YardWaste";
 var anchorApp = "#Appliance";
-//var anchorBulk = "#Bulk";
-//var anchorConstruction = "#Construction";
+var anchorBulk = "#Bulk";
+var anchorConstruction = "#Construction";
 //var anchorEwaste = "#Ewaste";
 //var anchorMedical = "#Medical";
 //var anchorSharps = "#Sharps";
-
-
-
-/*
-// Disposal Notes - Appliance link
-var dispNotesLinkApp = linkPrefix + divNum + dispNotes + linkPostfix + anchorApp;
-
-if (offeredApp === "Yes") {
-	document.getElementById("app-disposal-landfill").href = dispNotesLinkLandfill;
-	document.getElementById("app-disposal-landfill").target = "_blank";
-	document.getElementById("app-disposal-landfill").innerHTML = "Disposal Notes - Appliance Notes";
-} else {
-	document.getElementById("app-disposal-landfill").href = siteInformationSwd;
-	document.getElementById("app-disposal-landfill").target = "_blank";
-	document.getElementById("app-disposal-landfill").innerHTML = "Solid Waste District Contacts for Other Disposal";
-}
-*/
-
-
-
-/*
-// Disposal Notes - Bulk link
-var dispNotesLinkBulk = linkPrefix + divNum + dispNotes + linkPostfix + anchorBulk;
-
-if (offeredBulk === "Yes") {
-	document.getElementById("bulk-disposal-landfill").href = dispNotesLinkLandfill;
-	document.getElementById("bulk-disposal-landfill").target = "_blank";
-	document.getElementById("bulk-disposal-landfill").innerHTML = "Disposal Notes - Bulk Notes";
-} else {
-	document.getElementById("bulk-disposal-landfill").href = siteInformationSwd;
-	document.getElementById("bulk-disposal-landfill").target = "_blank";
-	document.getElementById("bulk-disposal-landfill").innerHTML = "Solid Waste District Contacts for Other Disposal";
-}
-*/
-
-
-
-/*
-// Disposal Notes - Construction link
-var dispNotesLinkCon = linkPrefix + divNum + dispNotes + linkPostfix + anchorConstruction;
-
-if (offeredCon === "Yes") {
-	document.getElementById("con-disposal-landfill").href = dispNotesLinkLandfill;
-	document.getElementById("con-disposal-landfill").target = "_blank";
-	document.getElementById("con-disposal-landfill").innerHTML = "Disposal Notes - Construction Notes";
-} else {
-	document.getElementById("con-disposal-landfill").href = siteInformationSwd;
-	document.getElementById("con-disposal-landfill").target = "_blank";
-	document.getElementById("con-disposal-landfill").innerHTML = "Solid Waste District Contacts for Other Disposal";
-}
-*/
-
 
 
 /*
@@ -950,7 +899,7 @@ if (appRate.length === 0) {
 document.getElementById("appliance-rate").innerHTML = appRate;
 
 
-// Appliances Container Details
+// Appliances Limit
 var appLimit;
 if (appLimit.length === 0) {
 	appLimit = "Not offered";
@@ -958,7 +907,7 @@ if (appLimit.length === 0) {
 document.getElementById("appliance-limit").innerHTML = appLimit;
 
 
-// Appliances Container Delivered By
+// Appliances Serviced By
 var appServiced;
 if (appServiced.length === 0) {
 	appServiced = "No RS Containers provided";
@@ -1013,19 +962,116 @@ if (offeredApp === "No") {
 
 //====================================================================
 
-var offeredBulk;
+// Bulk Rate
 var bulkRate;
+if (bulkRate.length === 0) {
+	bulkRate = "Resident does not pay RS directly for service";
+}
+document.getElementById("bulk-rate").innerHTML = bulkRate;
+
+// Bulk Limit
 var bulkLimit;
+if (bulkLimit.length === 0) {
+	bulkLimit = "Not offered";
+}
+document.getElementById("bulk-limit").innerHTML = bulkLimit;
+
+// Bulk Serviced By
 var bulkServiced;
+if (bulkServiced.length === 0) {
+	bulkServiced = "No RS Containers provided";
+}
+document.getElementById("bulk-serviced-by").innerHTML = bulkServiced;
+
+// Bulk Service Day
 var bulkServiceDay;
+if (bulkServiceDay.length === 0) {
+	bulkServiceDay = "This field should not be visible if there is no service day";
+	document.getElementById("bulk-service-day").classList.add("js-error");
+}
+document.getElementById("bulk-service-day").innerHTML = bulkServiceDay;
+
+// Bulk Service Frequency
 var bulkServiceFrequency;
+var bulkServiceFrequency;
+if (bulkServiceFrequency.length === 0) {
+	bulkServiceFrequency = "This field should not be visible if there is no service day";
+	document.getElementById("bulk-service-freq").classList.add("js-error");
+}
+document.getElementById("bulk-service-freq").innerHTML = bulkServiceFrequency;
+
+// Bulk Notes
 var bulkNotes;
+if (bulkNotes.length === 0) {
+	bulkNotes = "No Special Notes";
+}
+document.getElementById("bulk-notes").innerHTML = bulkNotes;
 
 
+// Logic to determine whether Appliances is offered and what data to display depending on the answer.
+var offeredBulk; // Toggles the Bulk section between "Offered" and "Not Offered" and adjusts the visible components appropriately
+
+var dispNotesLinkBulk = linkPrefix + divNum + dispNotes + linkPostfix + anchorBulk;
+if (offeredBulk === "Yes") {
+	document.getElementById("bulk-disposal-landfill").href = dispNotesLinkBulk;
+	document.getElementById("bulk-disposal-landfill").target = "_blank";
+	document.getElementById("bulk-disposal-landfill").innerHTML = "Disposal Notes - Appliances Notes";
+} else {
+	document.getElementById("bulk-disposal-landfill").href = siteInformationSwd;
+	document.getElementById("bulk-disposal-landfill").target = "_blank";
+	document.getElementById("bulk-disposal-landfill").innerHTML = "Solid Waste District Contacts for Other Disposal";
+}
+
+if (offeredBulk === "No") {
+	document.getElementById("bulk-offered-toggle").innerHTML = "";
+	document.getElementById("bulk-not-offered-notice").innerHTML = " - Not Offered";
+}
 
 
 //====================================================================
 
+// Construction Debris Rate
+var conRate;
+if (conRate.length === 0) {
+	conRate = "Resident does not pay RS directly for service";
+}
+document.getElementById("con-rate").innerHTML = conRate;
+
+// Construction Debris Limit
+var conLimit;
+var conLimit;
+if (conLimit.length === 0) {
+	conLimit = "Not offered";
+}
+document.getElementById("con-limit").innerHTML = conLimit;
+
+// Construction Debris Notes
+var conNotes;
+if (conNotes.length === 0) {
+	conNotes = "No Special Notes";
+}
+document.getElementById("con-notes").innerHTML = conNotes;
+
+// Logic to determine whether Construction Debris services is offered and what data to display depending on the answer.
+var offeredCon; // Toggles the Construction Debris section between "Offered" and "Not Offered" and adjusts the visible components appropriately
+
+// Disposal Notes - Construction link
+var dispNotesLinkCon = linkPrefix + divNum + dispNotes + linkPostfix + anchorConstruction;
+
+if (offeredCon === "Yes") {
+	document.getElementById("con-disposal-landfill").href = dispNotesLinkCon;
+	document.getElementById("con-disposal-landfill").target = "_blank";
+	document.getElementById("con-disposal-landfill").innerHTML = "Disposal Notes - Construction Notes";
+} else {
+	document.getElementById("con-disposal-landfill").href = siteInformationSwd;
+	document.getElementById("con-disposal-landfill").target = "_blank";
+	document.getElementById("con-disposal-landfill").innerHTML = "Solid Waste District Contacts for Other Disposal";
+}
+
+if (offeredCon === "No") {
+	document.getElementById("con-offered-toggle").innerHTML = "";
+	document.getElementById("con-not-offered-notice").innerHTML = " - Not Offered";
+}
 
 
 
